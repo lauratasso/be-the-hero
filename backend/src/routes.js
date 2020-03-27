@@ -4,7 +4,6 @@ const incidentController = require('./controllers/incident-controller');
 const profileController = require('./controllers/profile-controller');
 const sessionController = require('./controllers/session-controller');
 
-
 const routes = express.Router();
 
 //a funcao assincrona se faz útil pelo insert poder demorar um pouco para ser concluido, então se 
