@@ -10,13 +10,13 @@ const routes = express.Router();
 //a funcao assincrona se faz útil pelo insert poder demorar um pouco para ser concluido, então se 
 //faz assim e coloca um 'await' na funcao, que faz ele acabar de executar o insert para só depois retornar.
 
-routes.post('/session', sessionController.create);
+routes.post('/sessions', sessionController.create);
 
 routes.post('/ongs', ongController.create);
 routes.get('/ongs', ongController.listAll);
 
 routes.post('/incidents', incidentController.create);
-routes.post('/incidents', incidentController.listAll);
+routes.get('/incidents', incidentController.listAll);
 routes.delete('/incidents/:id', incidentController.delete);
 
 routes.get('/profile', profileController.assignedIncidents);
