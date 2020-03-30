@@ -15,6 +15,6 @@ API desenvolvida para web e para mobile
   - Há uma rota para visualizar todos os casos da aplicação. 
   
   ## Linguagens
-    - React
+    - React JS e React Native
     - Node JS
     - Javascript
